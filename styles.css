@@ -1,0 +1,526 @@
+@import "compass/css3";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+font-family: 'Open Sans',
+;
+font-family: 'Spartan',
+;
+
+
+
+
+
+/* ------------  Mobile first ------------ */
+
+
+/* Some Base styling  */
+
+
+
+
+
+
+p {
+    font-family: 'Open Sans';
+    color: #3a4853;
+}
+
+h1 {
+    font-family: 'Spartan';
+    color: #3a4853;
+}
+
+h2 {
+    font-family: 'Spartan';
+    color: #3a4853;
+}
+
+a {
+    font-family: 'Spartan';
+}
+
+body {
+    background-color: #f2f1ed;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 60px;
+    z-index: 3;
+    background: #021423;
+    color: #f2f1ed;
+
+
+    display: inline-flex;
+
+    transition: top 0.3s;
+}
+
+.navmap {
+
+    width: 33.33%;
+    text-align: start;
+
+}
+
+.navlogo {
+
+    max-height: inherit;
+    width: 33.33%;
+    text-align: center;
+
+
+}
+
+.navlogo img {
+    max-height: inherit;
+    padding: 5px;
+}
+
+.navmenu {
+    width: 33.33%;
+    text-align: end;
+}
+
+
+
+
+
+
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 100%;
+    /* Specify a height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 4;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #021423;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+/* The sidepanel links */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f2f1ed;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+    color: #DB5E3E;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: #67e2eb;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: absolute;
+
+    width: 100%;
+    max-width: 100%;
+    z-index: 3;
+    background: #021423;
+    color: #f2f1ed;
+    align-items: stretch;
+    display: inline-flex;
+    padding: 10px;
+}
+
+footer div {
+    width: 33.33%;
+    text-align: center;
+}
+
+.content p {
+    color: #021423;
+}
+
+
+.right-aligned {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.crunched,
+.crunched p,
+.crunched h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.left-aligned {
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+
+
+
+
+.rv {
+    background: #e2c531;
+}
+
+
+
+
+.mari {
+    background: #676669;
+}
+
+
+.boats {
+    background: #3a4853;
+}
+
+
+.cabs {
+    background: #db5e3e;
+}
+
+
+
+/*  ----  Top Section  ----   */
+
+
+#change_this {
+    color: #f2f1ed;
+    font-weight: bold;
+    line-height: 1em;
+    letter-spacing: .1em;
+    opacity: 1;
+}
+
+
+
+
+.splash-container {
+    background: #021423;
+    background-position: top left;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+/* Video is in splash container div */
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('/img/fish.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+
+    font-size: 150%;
+    font-family: 'Open Sans';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 36px;
+}
+
+/* This is the main heading */
+.splash-head {
+    font-size: 2em;
+    font-weight: bold;
+    color: #f2f1ed;
+    padding: 1.6em;
+    line-height: 1em;
+    text-transform: uppercase;
+
+}
+
+/* This is the subheading */
+.splash-subhead {
+    color: #f2f1ed;
+    letter-spacing: 0.1em;
+
+}
+
+.splashbox-left {
+    margin: 0px;
+    visibility: hidden;
+    display: flex;
+}
+
+.splashbox-right {
+    margin: 0px;
+    visibility: hidden;
+    display: flex;
+
+}
+
+.splashbox {
+    width: 50%;
+    height: auto;
+    border-style: solid;
+    border-color: #f2f1ed;
+    border-width: 1px;
+    padding: 1em;
+    padding-top: 10em;
+    padding-right: 6em;
+    display: none;
+
+}
+
+.splashbox p {
+    font-size: 90%;
+    font-family: 'Spartan';
+    text-transform: uppercase;
+    color: #f2f1ed;
+
+}
+
+
+
+
+
+
+
+/*
+ * -- CONTENT STYLES --
+ * This represents the content area
+ */
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    min-height: 11%;
+    max-width: 120%;
+    z-index: 2;
+    background: #f2f1ed;
+
+}
+
+#colorbuffer {
+    width: 100%;
+    height: 20px;
+    display: inline-flex;
+}
+
+.yellow {
+    width: 25%;
+    background: #e2c531;
+}
+
+.orange {
+    width: 37%;
+    background: #db5e3e;
+}
+
+.grey {
+    width: 23%;
+    background: #676669;
+}
+
+.dgrey {
+    width: 15%;
+    background: #3a4853;
+}
+
+.features {}
+
+.bignavs {
+    font-family: 'Spartan';
+    font-size: 1.5em;
+    padding: .8em;
+    color: #f2f1ed;
+}
+
+.bignavs:hover,
+.bignavs:focus,
+.bignavs:active {
+    transition: .6s;
+    transform: translateX(8px);
+    background: #021423;
+}
+
+
+
+
+
+
+
+
+
+.container {
+    padding: 4em;
+}
+
+/* Clear floats */
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+/* 2/3 column */
+.column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+
+
+}
+
+/* 1/3 column */
+.column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+    text-align: center;
+}
+
+.column-33 etsicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.etsicon img {
+    max-width: 250px;
+}
+
+.column-66 p {
+    max-width: 700px;
+}
+
+
+/* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+@media screen and (max-width: 1025px) {
+
+    .column-66,
+    .column-33 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+@media (min-width: 1025px) {
+    .splash-container {
+        background-position: top left 65%;
+    }
+
+    .splashbox {
+        display: inline-flex;
+    }
+
+    .bignavs {
+        display: none;
+    }
+
+    .splashbox-left {
+        margin: 0px;
+        font-size: 125%;
+        visibility: visible;
+    }
+
+    .splashbox-right {
+        margin: 0px;
+        font-size: 125%;
+        visibility: visible;
+    }
+
+}
+
+@media (min-width: 795px) {
+
+    /* We increase the body font size */
+    body {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (min-width: 78em) {
+
+    /* We increase the header font size even more */
+    .splash {
+        font-size: 175%;
+    }
+
+    .splash-container {
+        background-position: top center;
+    }
+
+}
