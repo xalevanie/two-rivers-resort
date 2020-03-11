@@ -55,7 +55,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    max-height: 60px;
+    max-height: 64px;
     z-index: 3;
     background: #021423;
     color: #f2f1ed;
@@ -84,7 +84,7 @@ body {
 
 .navlogo img {
     max-height: inherit;
-    padding: 5px;
+    padding: 10px;
 }
 
 .navmenu {
@@ -128,7 +128,7 @@ body {
 
 /* When you mouse over the navigation links, change their color */
 .sidepanel a:hover {
-    color: #DB5E3E;
+    color: ;
 }
 
 /* Position and style the close button (top right corner) */
@@ -144,14 +144,15 @@ body {
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
+    background-color: transparent;
     color: #67e2eb;
     padding: 10px 15px;
     border: none;
+    height: inherit;
 }
 
 .openbtn:hover {
-    background-color: #444;
+    background-color: #DB5E3E;
 }
 
 
@@ -418,7 +419,7 @@ video {
 
 
 .container {
-    padding: 4em;
+    padding: 2em;
 }
 
 /* Clear floats */
