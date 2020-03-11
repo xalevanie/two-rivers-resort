@@ -10,6 +10,8 @@ font-family: 'Open Sans',
 ;
 font-family: 'Spartan',
 ;
+font-family: 'Montserrat'
+;
 
 
 
@@ -26,7 +28,6 @@ font-family: 'Spartan',
 
 
 p {
-    font-family: 'Open Sans';
     color: #3a4853;
 }
 
@@ -44,11 +45,30 @@ a {
     font-family: 'Spartan';
 }
 
+
+button {
+    border-width: 3px;
+    border-color: #67e2eb;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 6px;
+    font-family: 'Spartan';
+    color: #67e2eb;
+    
+}
+
+button:hover {
+    background: #67e2eb;
+    color: #000;
+}
+
+
 body {
     background-color: #f2f1ed;
     overflow-x: hidden;
     padding: 0;
     margin: 0;
+    font-family: Montserrat;
 }
 
 #navbar {
