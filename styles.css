@@ -46,6 +46,7 @@ h3 {
     font-family: 'Spartan';
     color: #3a4853;
 }
+
 a {
     font-family: 'Spartan';
 }
@@ -59,7 +60,6 @@ button {
     padding: 16px;
     font-family: 'Spartan';
     color: #00C49C;
-
 }
 
 button:hover {
@@ -69,7 +69,7 @@ button:hover {
 
 
 body {
-    background-color: floralwhite ;
+    background-color: floralwhite;
     overflow-x: hidden;
     padding: 0;
     margin: 0;
@@ -89,38 +89,32 @@ body {
 }
 
 .navmap {
-
     width: 33.33%;
     text-align: start;
-
 }
 
 .navmap svg {
     fill: #00C49C;
     margin-top: 12px;
-    margin-left: 30px;
+    margin-left: 30px;   
 }
 
 .navlogo {
-
     max-height: inherit;
     width: 33.33%;
     text-align: center;
-
-
 }
 
 .navlogo img {
     max-height: inherit;
-    padding: 10px;
+    margin-top: 4px;
+    padding: 4px;
 }
 
 .navmenu {
     width: 33.33%;
     text-align: end;
     height: 60px;
-    
-    
 }
 
 .navmenu button {
@@ -129,41 +123,37 @@ body {
 
 
 
-
-
-
-
 /* The sidepanel menu */
 .sidepanel {
     height: 100%;
-    /* Specify a height */
     width: 0;
-    /* 0 width - change this with JavaScript */
     position: fixed;
-    /* Stay in place */
     z-index: 4;
-    /* Stay on top */
     top: 0;
     right: 0;
     background-color: #021423;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+    background-image: url(img/trr_bubbles_orange.png);
+    background-size: cover;
 }
 
-/* The sidepanel links */
 .sidepanel a {
-    padding: 8px 8px 8px 32px;
+    padding: 12px 12px 12px 12px;
     text-decoration: none;
     font-size: 25px;
     color: #f2f1ed;
     display: block;
     transition: 0.3s;
+    text-align: center;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidepanel a:hover {
-    color: ;
+    color: #00C49C;
+    background-color: #3a4853;
+    padding-left: 10px;
 }
 
 /* Position and style the close button (top right corner) */
@@ -173,6 +163,7 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    color: #DB5E3E;
 }
 
 /* Style the button that is used to open the sidepanel */
@@ -180,7 +171,7 @@ body {
     font-size: 20px;
     cursor: pointer;
     background-color: transparent;
-    color: #67e2eb;
+    color: #00C49C;
     padding: 10px 15px;
     border: none;
     height: inherit;
@@ -212,22 +203,24 @@ footer {
     justify-content: space-between;
     align-items: center;
     font-size: 90%;
-    
+
 }
 
-footer div {
+.footerdiv {
     text-align: center;
     flex-grow: 1;
     max-width: 19%;
-    
-}
-#footerlogo {
-    flex-grow: 2;
-    padding: 1em;
+    min-width: 10%;
+
 }
 
-footer div p {
+#footerlogo {
+    padding: 1em;
+    width: 100px;
+    fill: #f2f1ed;
+
 }
+
 
 @media screen and (max-width: 1025px) {
 
@@ -235,22 +228,27 @@ footer div p {
         text-align: center;
         flex-direction: column;
         align-items: center;
-        
+
     }
-    footer div {
+
+    .footerdiv {
         max-width: 80%;
+        min-width: 20%;
     }
+
     #footerlogo {
-    order: -1;
-        
-}
+        order: -1;
+        width: 100px;
+
+
+    }
 }
 
 .features p {
     text-align: center;
     font-size: 80%;
     background-color: #021423;
-    color: #f2f1ed; 
+    color: #f2f1ed;
     margin: 0;
     padding: 1em;
 }
