@@ -84,7 +84,7 @@ body {
     z-index: 3;
     background: #021423;
     color: #f2f1ed;
-    display: inline-flex;
+    display: flex;
     transition: top 0.3s;
 }
 
@@ -95,12 +95,11 @@ body {
 
 }
 
-/*.navmap svg {
+.navmap svg {
     fill: #00C49C;
     margin-top: 12px;
     margin-left: 30px;
 }
-*/
 
 .navlogo {
 
@@ -119,6 +118,7 @@ body {
 .navmenu {
     width: 33.33%;
     text-align: end;
+    height: 60px;
     
     
 }
