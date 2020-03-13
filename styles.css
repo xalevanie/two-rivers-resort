@@ -29,7 +29,7 @@ font-family: 'Montserrat'
 
 p {
     color: #3a4853;
-    font-family: 'Montserrat' ;
+    font-family: 'Montserrat';
 }
 
 h1 {
@@ -42,30 +42,34 @@ h2 {
     color: #3a4853;
 }
 
+h3 {
+    font-family: 'Spartan';
+    color: #3a4853;
+}
 a {
     font-family: 'Spartan';
 }
 
 
 button {
+    background: #f2f1ed;
     border-width: 3px;
-    border-color: #67e2eb;
+    border-color: #00C49C;
     border-style: solid;
-    border-radius: 8px;
-    padding: 6px;
+    padding: 16px;
     font-family: 'Spartan';
-    color: #67e2eb;
-    
+    color: #00C49C;
+
 }
 
 button:hover {
-    background: #67e2eb;
+    background: #00C49C;
     color: #000;
 }
 
 
 body {
-    background-color: #f2f1ed;
+    background-color: floralwhite ;
     overflow-x: hidden;
     padding: 0;
     margin: 0;
@@ -111,6 +115,7 @@ body {
 .navmenu {
     width: 33.33%;
     text-align: end;
+    
 }
 
 
@@ -193,15 +198,54 @@ footer {
     z-index: 3;
     background: #021423;
     color: #f2f1ed;
-    align-items: stretch;
     display: inline-flex;
-    padding: 10px;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 90%;
+    
 }
 
 footer div {
-    width: 33.33%;
     text-align: center;
+    flex-grow: 1;
+    max-width: 19%;
+    
 }
+#footerlogo {
+    flex-grow: 2;
+    padding: 1em;
+}
+
+footer div p {
+}
+
+@media screen and (max-width: 1025px) {
+
+    footer {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    footer div {
+        max-width: 80%;
+    }
+    #footerlogo {
+    order: -1;
+        
+}
+}
+
+.features p {
+    text-align: center;
+    font-size: 80%;
+    background-color: #021423;
+    color: #f2f1ed; 
+    margin: 0;
+    padding: 1em;
+}
+
 
 .content p {
     color: #021423;
@@ -301,7 +345,7 @@ video {
     /* absolute center .splash within .splash-container */
 
     font-size: 150%;
-    font-family: 'Open Sans';
+    font-family: 'Spartan';
     position: absolute;
     top: 20px;
     left: 0;
@@ -322,6 +366,8 @@ video {
     padding: 1.6em;
     line-height: 1em;
     text-transform: uppercase;
+    font-family: 'Spartan';
+    line-height: 1.2em;
 
 }
 
@@ -435,12 +481,25 @@ video {
 
 
 
+#orangebbl {
+    background-image: url("img/trr_bubbles_orange.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 
-
+#tealbbl {
+    background-image: url("img/trr_bubbles_teal.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 
 
 .container {
     padding: 2em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
 /* Clear floats */
@@ -475,12 +534,13 @@ video {
 }
 
 .etsicon img {
-    max-width: 250px;
+    max-width: 200px;
 }
 
 .column-66 p {
     max-width: 700px;
 }
+
 
 
 /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
