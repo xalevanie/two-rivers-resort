@@ -8,7 +8,7 @@
 // Simple jQuery event handler
 $(document).ready(function () {
     "use strict";
-    $("#clickMe").click(function (e) {
+    $("#clickMe").click(function() {
         alert("hello world!");
     });
 });
@@ -19,7 +19,7 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-60px";
+    document.getElementById("navbar").style.top = "-150px";
   }
   prevScrollpos = currentScrollPos;
 }
@@ -27,7 +27,7 @@ window.onscroll = function() {
 
 /* Set the width of the sidebar to 250px (show it) */
 
-function openNav() {document.getElementById("mySidepanel").style.width = "250px";
+function openNav() {document.getElementById("mySidepanel").style.width = "100%";
 }
 
 /* Set the width of the sidebar to 0 (hide it) */
