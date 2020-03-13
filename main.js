@@ -8,7 +8,7 @@
 // Simple jQuery event handler
 $(document).ready(function () {
     "use strict";
-    $("#clickMe").click(function() {
+    $("#clickMe").click(function () {
         alert("hello world!");
     });
 });
@@ -27,9 +27,11 @@ window.onscroll = function() {
 
 /* Set the width of the sidebar to 250px (show it) */
 
-function openNav() {document.getElementById("mySidepanel").style.width = "100%";
+function openNav() {
+    document.getElementById("mySidepanel").style.width = "100%";
 }
 
 /* Set the width of the sidebar to 0 (hide it) */
-function closeNav() {document.getElementById("mySidepanel").style.width = "0";
+function closeNav() {
+    document.getElementById("mySidepanel").style.width = "0";
 }
