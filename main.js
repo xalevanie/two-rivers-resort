@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
 });
 
-var prevScrollpos = window.pageYOffset;
+/*var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
@@ -23,6 +23,19 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+*/
+
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $("#navbar").outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+
+
 
 
 
