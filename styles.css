@@ -52,6 +52,13 @@ a {
     text-decoration: none;
 }
 
+hr {
+    background-color: #3a4853;
+    border-style: solid;
+    height: 1px;
+    border-width: .5px;
+    border-color: #3a4853;
+}
 
 button {
     background: #f2f1ed;
@@ -159,7 +166,7 @@ body {
 
 .menulogo {
     margin: 1em;
-    width: 12em;
+    width: 16em;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -579,8 +586,8 @@ video {
 
 
 .content p {
-   padding-left: 32px;
-    padding-right: 32px;
+   padding-left: 2px;
+    padding-right: 2px;
 }
 
 /* Clear floats */
@@ -599,7 +606,9 @@ video {
 .column-33 {
     float: left;
     width: 33.33333%;
-    padding: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 2em;
     text-align: center;
 }
 
