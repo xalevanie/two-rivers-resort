@@ -48,7 +48,8 @@ h3 {
 }
 
 a {
-    font-family: 'Spartan';
+    font-family: 'Spartan'; 
+    text-decoration: none;
 }
 
 
@@ -86,6 +87,7 @@ body {
     color: #f2f1ed;
     display: flex;
     transition: top 0.3s;
+    align-items: center;
 }
 
 .navmap {
@@ -95,21 +97,27 @@ body {
 
 .navmap svg {
     fill: #00C49C;
-    margin-top: 12px;
     margin-left: 30px;   
+}
+
+
+
+.navmap svg:hover {
+    fill: #e2c531;
 }
 
 .navlogo {
     max-height: inherit;
     width: 33.33%;
+    height: 60px;
+    margin-top: 8px;
     text-align: center;
+    background-image: url(img/TRR_SunIcon_Horiz_Styled.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-.navlogo img {
-    max-height: inherit;
-    margin-top: 4px;
-    padding: 4px;
-}
 
 .navmenu {
     width: 33.33%;
@@ -214,6 +222,10 @@ footer {
 
 }
 
+.footerdiv svg {
+    fill: #00C49C;      
+}
+
 #footerlogo {
     padding: 1em;
     width: 100px;
@@ -244,6 +256,17 @@ footer {
     }
 }
 
+@media screen and (max-width: 550px) {
+    
+    .navlogo {
+        background-image: url(img/2logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+        background-position: center;
+        margin-top: 0;
+    }
+}
+
 .features p {
     text-align: center;
     font-size: 80%;
@@ -262,6 +285,7 @@ footer {
 .right-aligned {
     text-align: center;
     flex-wrap: wrap;
+     align-items: stretch;
 }
 
 .crunched,
@@ -269,11 +293,12 @@ footer {
 .crunched h1 {
     margin: 0;
     padding: 0;
+    
 }
 
 .left-aligned {
     text-align: left;
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
 }
 
 
@@ -282,6 +307,10 @@ footer {
 
 .rv {
     background: #e2c531;
+    font-family: 'Spartan';
+    font-size: 1.5em;
+    padding: .8em;
+    color: #f2f1ed;
 }
 
 
@@ -289,18 +318,35 @@ footer {
 
 .mari {
     background: #676669;
+
 }
 
 
 .boats {
     background: #3a4853;
+   
 }
 
 
 .cabs {
     background: #db5e3e;
+   
 }
 
+.bignavs {
+    font-family: 'Spartan';
+    font-size: 1.5em;
+    padding: .8em;
+    color: #f2f1ed;
+}
+
+.bignavs:hover,
+.bignavs:focus,
+.bignavs:active {
+    transition: .6s;
+    transform: translateX(8px);
+    background: #021423;
+}
 
 
 /*  ----  Top Section  ----   */
@@ -354,7 +400,7 @@ video {
     font-size: 150%;
     font-family: 'Spartan';
     position: absolute;
-    top: 20px;
+    top: 0px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -387,19 +433,21 @@ video {
 
 .splashbox-left {
     margin: 0px;
+    width: 50%;
     visibility: hidden;
     display: flex;
+    
 }
 
 .splashbox-right {
     margin: 0px;
+    width: 50%;
     visibility: hidden;
     display: flex;
 
 }
 
 .splashbox {
-    width: 50%;
     height: auto;
     border-style: solid;
     border-color: #f2f1ed;
@@ -408,18 +456,41 @@ video {
     padding-top: 10em;
     padding-right: 6em;
     display: none;
+    
+   
 
 }
 
 .splashbox p {
-    font-size: 90%;
+    font-size: 80%;
     font-family: 'Spartan';
     text-transform: uppercase;
     color: #f2f1ed;
+    width: 200px;
+    flex: stretch;
 
 }
 
+.splashr:hover {
+    background-image: url(img/cabinbits.jpg);
+    background-size: cover;
+    
+}
 
+.splashc:hover {
+    background-image: url(img/cabinbits.jpg);
+    background-size: cover;
+}
+
+.splashm:hover {
+    background-image: url(img/cabinbits.jpg);
+    background-size: cover;
+}
+
+.splashh:hover {
+    background-image: url(img/cabinbits.jpg);
+    background-size: cover;
+}
 
 
 
@@ -465,24 +536,11 @@ video {
 .dgrey {
     width: 15%;
     background: #3a4853;
+    
 }
 
-.features {}
 
-.bignavs {
-    font-family: 'Spartan';
-    font-size: 1.5em;
-    padding: .8em;
-    color: #f2f1ed;
-}
 
-.bignavs:hover,
-.bignavs:focus,
-.bignavs:active {
-    transition: .6s;
-    transform: translateX(8px);
-    background: #021423;
-}
 
 
 
