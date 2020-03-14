@@ -48,7 +48,7 @@ h3 {
 }
 
 a {
-    font-family: 'Spartan'; 
+    font-family: 'Spartan';
     text-decoration: none;
 }
 
@@ -97,7 +97,7 @@ body {
 
 .navmap svg {
     fill: #00C49C;
-    margin-left: 30px;   
+    margin-left: 30px;
 }
 
 
@@ -155,13 +155,11 @@ body {
     color: #3a4853;
     display: block;
     transition: 0.3s;
-
 }
 
 .menulogo {
     margin: 1em;
-    width: 12em; 
- 
+    width: 12em;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -210,37 +208,60 @@ body {
 
 footer {
     position: absolute;
-
     width: 100%;
     max-width: 100%;
     z-index: 3;
     background: #021423;
     color: #f2f1ed;
     display: inline-flex;
-    padding: 40px;
+    padding: 32px;
     justify-content: space-between;
-    align-items: center;
-    font-size: 90%;
-
+    align-items: top;
+    font-size: 80%;
 }
+
+.footerdiv h3 {
+    color: #f2f1ed;
+}
+
+.footerdiv a {
+    color: #f2f1ed;
+}
+
+.footerdiv a:hover {
+    color: #DB5E3E;
+    text-decoration-line: underline;
+}
+
+.footerdiv a:active {
+    color: #00C49C;
+}
+
 
 .footerdiv {
     text-align: center;
     flex-grow: 1;
     max-width: 19%;
     min-width: 10%;
-
 }
 
+
+
 .footerdiv svg {
-    fill: #00C49C;      
+    fill: #00C49C;
 }
 
 #footerlogo {
     padding: 1em;
     width: 100px;
     fill: #f2f1ed;
+}
 
+#footnotice {
+    font-size: 80%;
+    font-weight: 100;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 
@@ -250,7 +271,6 @@ footer {
         text-align: center;
         flex-direction: column;
         align-items: center;
-
     }
 
     .footerdiv {
@@ -261,17 +281,15 @@ footer {
     #footerlogo {
         order: -1;
         width: 100px;
-
-
     }
 }
 
 @media screen and (max-width: 550px) {
-    
+
     .navlogo {
         background-image: url(img/2logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+        background-repeat: no-repeat;
+        background-size: contain;
         background-position: center;
         margin-top: 0;
     }
@@ -295,7 +313,7 @@ footer {
 .right-aligned {
     text-align: center;
     flex-wrap: wrap;
-     align-items: stretch;
+    align-items: stretch;
 }
 
 .crunched,
@@ -303,7 +321,7 @@ footer {
 .crunched h1 {
     margin: 0;
     padding: 0;
-    
+
 }
 
 .left-aligned {
@@ -334,13 +352,13 @@ footer {
 
 .boats {
     background: #3a4853;
-   
+
 }
 
 
 .cabs {
     background: #db5e3e;
-   
+
 }
 
 .bignavs {
@@ -431,14 +449,12 @@ video {
     text-transform: uppercase;
     font-family: 'Spartan';
     line-height: 1.2em;
-
 }
 
 /* This is the subheading */
 .splash-subhead {
     color: #f2f1ed;
     letter-spacing: 0.1em;
-
 }
 
 .splashbox-left {
@@ -446,7 +462,6 @@ video {
     width: 50%;
     visibility: hidden;
     display: flex;
-    
 }
 
 .splashbox-right {
@@ -454,7 +469,6 @@ video {
     width: 50%;
     visibility: hidden;
     display: flex;
-
 }
 
 .splashbox {
@@ -466,9 +480,6 @@ video {
     padding-top: 10em;
     padding-right: 6em;
     display: none;
-    
-   
-
 }
 
 .splashbox p {
@@ -478,13 +489,11 @@ video {
     color: #f2f1ed;
     width: 200px;
     flex: stretch;
-
 }
 
 .splashr:hover {
     background-image: url(img/cabinbits.jpg);
     background-size: cover;
-    
 }
 
 .splashc:hover {
@@ -519,7 +528,6 @@ video {
     max-width: 120%;
     z-index: 2;
     background: #f2f1ed;
-
 }
 
 #colorbuffer {
@@ -546,7 +554,6 @@ video {
 .dgrey {
     width: 15%;
     background: #3a4853;
-    
 }
 
 
@@ -571,10 +578,9 @@ video {
 }
 
 
-.container {
-    padding: 2em;
-    padding-left: 4em;
-    padding-right: 4em;
+.content p {
+   padding-left: 32px;
+    padding-right: 32px;
 }
 
 /* Clear floats */
@@ -584,37 +590,57 @@ video {
     clear: both
 }
 
-/* 2/3 column */
 .column-66 {
     float: left;
     width: 66.66666%;
-    padding: 20px;
-
-
+    padding: 2em;
 }
 
-/* 1/3 column */
 .column-33 {
     float: left;
     width: 33.33333%;
-    padding: 20px;
+    padding: 16px;
     text-align: center;
 }
+
+
+.intro {
+    margin: 64px;
+}
+
 
 .column-33 etsicon {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .etsicon img {
     max-width: 200px;
 }
 
-.column-66 p {
-    max-width: 700px;
+.etsicon h3 {
+    margin-top: 0;
 }
+
+.column-66 p {
+    
+}
+
+.ste {
+    position: relative;
+    background-color: #f2f1ed;
+    padding: 4em;
+    margin: 0;
+}
+.tribes{
+    display: inline-flex;
+    justify-content: space-around;
+}
+.tribes img{ 
+    margin: 16px;
+}
+
 
 
 
@@ -625,6 +651,11 @@ video {
     .column-33 {
         width: 100%;
         text-align: center;
+    }  
+    
+    .etsicon p {
+        margin-left: 64px;
+        margin-right: 64px;
     }
 }
 
