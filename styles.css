@@ -586,7 +586,7 @@ video {
 
 
 .content p {
-   padding-left: 2px;
+    padding-left: 2px;
     padding-right: 2px;
 }
 
@@ -606,15 +606,16 @@ video {
 .column-33 {
     float: left;
     width: 33.33333%;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 2em;
     text-align: center;
 }
 
 
 .intro {
-    margin: 64px;
+    margin: 48px;
+width: 66%;
 }
 
 
@@ -632,9 +633,7 @@ video {
     margin-top: 0;
 }
 
-.column-66 p {
-    
-}
+.column-66 p {}
 
 .ste {
     position: relative;
@@ -642,11 +641,13 @@ video {
     padding: 4em;
     margin: 0;
 }
-.tribes{
+
+.tribes {
     display: inline-flex;
     justify-content: space-around;
 }
-.tribes img{ 
+
+.tribes img {
     margin: 16px;
 }
 
@@ -660,11 +661,15 @@ video {
     .column-33 {
         width: 100%;
         text-align: center;
-    }  
-    
+    }
+
     .etsicon p {
-        margin-left: 64px;
-        margin-right: 64px;
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+    .intro {
+        width: auto;
+        text-align: justify;
     }
 }
 
