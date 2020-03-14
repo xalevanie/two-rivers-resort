@@ -20,7 +20,7 @@ font-family: 'Montserrat'
 /* ------------  Mobile first ------------ */
 
 
-/* Some Base styling  */
+
 
 
 
@@ -145,23 +145,33 @@ body {
     transition: 0.5s;
     background-image: url(img/trr_bubbles_orange.png);
     background-size: cover;
+    text-align: center;
 }
 
 .sidepanel a {
     padding: 12px 12px 12px 12px;
     text-decoration: none;
-    font-size: 25px;
-    color: #f2f1ed;
+    font-size: 22px;
+    color: #3a4853;
     display: block;
     transition: 0.3s;
-    text-align: center;
+
+}
+
+.menulogo {
+    margin: 1em;
+    width: 12em; 
+ 
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidepanel a:hover {
     color: #00C49C;
-    background-color: #3a4853;
-    padding-left: 10px;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #3a4853;
+    transform: translateX(5px);
+    transition: 0.5s;
 }
 
 /* Position and style the close button (top right corner) */
