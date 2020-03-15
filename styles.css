@@ -615,7 +615,7 @@ video {
 
 .intro {
     margin: 48px;
-width: 66%;
+    width: 66%;
 }
 
 
@@ -667,6 +667,7 @@ width: 66%;
         margin-left: 48px;
         margin-right: 48px;
     }
+
     .intro {
         width: auto;
         text-align: justify;
