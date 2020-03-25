@@ -40,11 +40,13 @@ h1 {
 h2 {
     font-family: 'Spartan';
     color: #3a4853;
+    line-height: 1.6;
 }
 
 h3 {
     font-family: 'Spartan';
     color: #3a4853;
+    line-height: 1.6;
 }
 
 a {
@@ -60,6 +62,11 @@ hr {
     border-color: #3a4853;
 }
 
+figcaption {
+    font-size: 12px;
+    float: center;
+}
+
 button {
     background: #f2f1ed;
     border-width: 3px;
@@ -72,9 +79,16 @@ button {
     color: #00C49C;
 }
 
-button:hover {
+
+
+button:hover,
+button:focus,
+button:active {
+    transition: .4s;
+    transform: translatex(3px);
     background: #00C49C;
     color: #000;
+    font-weight: bold;
 }
 
 
@@ -206,6 +220,7 @@ body {
     border: none;
     height: inherit;
     float: right;
+    margin: 0;
 }
 
 .openbtn:hover {
@@ -542,6 +557,7 @@ video {
 .container {
     padding-left: 12%;
     padding-right: 12%;
+    padding-top: 36px;
 }
 
 .content-wrapper {
@@ -608,7 +624,25 @@ video {
    
 }
 
+#splitcontainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    align-items: flex-end;
+    border-left: 1px solid black;
+}
 
+.split {
+    
+    width: 49.99%;
+    padding: 10px 16px 10px 16px;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.split a{
+    
+}
 .content p {
     color: #021423;
 
@@ -662,14 +696,22 @@ video {
     margin-top: 0;
 }
 
-.column-66 p {}
+.column-66 p {
+    line-height: 1.6;
+}
 
 .ste {
     position: relative;
     background-color: #f2f1ed;
-    padding: 4em;
-    margin: 0;
 }
+
+.stelogo img {
+    max-width: 90%;
+    flex-grow: 1;
+    margin-top : 36px;
+    
+}
+
 
 .tribes {
     display: inline-flex;
@@ -703,6 +745,16 @@ video {
         width: auto;
         text-align: justify;
     }
+    
+    #splitcontainer {
+        display: block;
+        border-left: none;
+    }
+    
+    .split {
+        width: 100%;
+    }
+    
 }
 
 
@@ -733,6 +785,23 @@ video {
         font-size: 125%;
         visibility: visible;
     }
+    
+    .hidehr {
+        display: none;
+    }
+    
+    .stelogo img {
+    max-width: 400;
+    margin-top : 36px;
+    
+}
+    
+    #fb-root {
+    max-width: 100%;
+    padding:1em;
+}
+    
+    
 
 }
 
