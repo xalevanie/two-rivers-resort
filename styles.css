@@ -68,6 +68,7 @@ figcaption {
 }
 
 button {
+    
     background: #f2f1ed;
     border-width: 3px;
     border-color: #00C49C;
@@ -77,9 +78,14 @@ button {
     padding: 16px;
     font-family: 'Spartan';
     color: #00C49C;
+    display: inline-flex;
+    align-items: center;
+    
 }
 
-
+.btncolor img {
+    padding-right: 8px;
+}
 
 button:hover,
 button:focus,
@@ -597,9 +603,22 @@ video {
     background: #3a4853;
 }
 
+li {
+    font-weight: 600;
+    font-size: 24px;
+    color: #db5e3e;
+    padding: 6px;
+    
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
 
-
-
+li img {
+    width: 15%;
+}
 
 #fb-root {
     width: 80%;
@@ -616,7 +635,7 @@ video {
 }
 
 #tealbbl {
-    background-image: url("img/trr_bubbles_teal.png");
+    background-image: url("img/trr_bubbles_orange.png");
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
